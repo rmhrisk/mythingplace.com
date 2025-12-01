@@ -1,0 +1,229 @@
+/* --- 🎨 The Official Brand Palette (Strict Adherence) --- */
+:root {
+    --deep-gold: #C59232;
+    --sunny-orange: #FFB56B;
+    --pale-yellow: #FFF275;
+    --maker-silver: #A6A6A6;
+    --clean-white: #FFFFFF;
+    
+    /* Slightly richer washes for more impact */
+    --warm-yellow-bg: #fffce0; /* A slightly deeper pale yellow */
+    --orange-pop-bg: #fff0e0;  /* A richer orange wash for the box */
+}
+
+/* --- General Reset & Typography --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    /* POP CHANGE 1: Solid, cheerful background color */
+    background-color: var(--warm-yellow-bg);
+    color: var(--maker-silver);
+    line-height: 1.6;
+    text-align: center;
+    padding: 30px 15px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Needed for background decorations */
+    overflow-x: hidden;
+}
+
+/* --- Background Decorations for extra color --- */
+.bg-deco {
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1; /* Puts them behind the main card */
+    opacity: 0.6;
+}
+.deco-1 {
+    width: 300px; height: 300px;
+    background: var(--sunny-orange);
+    top: 10%; left: -100px;
+    filter: blur(40px);
+}
+.deco-2 {
+    width: 250px; height: 250px;
+    background: var(--deep-gold);
+    bottom: 10%; right: -80px;
+    filter: blur(40px);
+}
+
+
+/* --- The Main "Pop" Container --- */
+.maker-card {
+    max-width: 550px;
+    width: 100%;
+    background: var(--clean-white);
+    padding: 50px 35px;
+    border-radius: 30px;
+    /* POP CHANGE 2: Thick Orange Border + Hard Gold Shadow for 3D effect */
+    border: 5px solid var(--sunny-orange);
+    box-shadow: 10px 10px 0px var(--deep-gold);
+    position: relative;
+}
+
+/* --- Header & Logo --- */
+.logo-header {
+    margin-bottom: 30px;
+    border-bottom: 4px dotted #e0e0e0;
+    padding-bottom: 25px;
+}
+
+.brand-logo {
+    font-family: 'Cookie', cursive;
+    color: var(--deep-gold);
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: normal;
+    /* Making the logo pop off the white */
+    text-shadow: 2px 2px 0px #ffe5b5;
+}
+
+/* --- Welcome Content --- */
+.welcome-content {
+    margin-bottom: 40px;
+}
+
+.headline {
+    /* POP CHANGE 3: Using Sunny Orange for high contrast headline */
+    color: var(--sunny-orange);
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+.subtext {
+    font-size: 1.2rem;
+    color: #888;
+    font-weight: 600;
+    max-width: 95%;
+    margin: 0 auto;
+}
+.subtext strong {
+    color: var(--deep-gold);
+}
+
+/* --- The Sign-up Box (High Impact) --- */
+.signup-box-container {
+    margin-bottom: 40px;
+}
+
+.signup-box {
+    /* POP CHANGE 4: Richer orange background */
+    background-color: var(--orange-pop-bg);
+    border-radius: 25px;
+    padding: 35px 25px;
+    /* A fun, dashed gold border */
+    border: 4px dashed var(--deep-gold);
+}
+
+.signup-box h3 {
+    color: var(--deep-gold);
+    font-weight: 800;
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+.signup-box p {
+    color: var(--sunny-orange);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* --- Form Elements --- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="email"] {
+    padding: 18px;
+    border: 3px solid var(--maker-silver);
+    background: var(--clean-white);
+    border-radius: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--maker-silver);
+    outline: none;
+}
+
+input[type="email"]:focus {
+    border-color: var(--sunny-orange);
+}
+
+button {
+    padding: 18px;
+    /* Solid Deep Gold for maximum pop against the orange box */
+    background-color: var(--deep-gold);
+    color: var(--clean-white);
+    border: none;
+    border-radius: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+    font-size: 1.3rem;
+    cursor: pointer;
+    /* A hard shadow for a button that feels pressable */
+    box-shadow: 0 6px 0px #9c7325;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(2px);
+    box-shadow: 0 4px 0px #9c7325;
+    background-color: var(--sunny-orange);
+}
+button:active {
+    transform: translateY(6px);
+    box-shadow: 0 0px 0px #9c7325;
+}
+
+.tiny-text {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-top: 15px;
+    color: var(--maker-silver);
+    opacity: 0.7;
+}
+
+/* --- Footer --- */
+footer {
+    border-top: 4px dotted #e0e0e0;
+    padding-top: 30px;
+}
+
+.categories {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.cat-orange { color: var(--sunny-orange); }
+.cat-gold { color: var(--deep-gold); }
+.cat-silver { color: var(--maker-silver); }
+.divider { color: #e0e0e0;}
+
+.copyright {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--maker-silver);
+}
+
+/* --- Mobile adjustments --- */
+@media (min-width: 600px) {
+    .brand-logo { font-size: 6rem; }
+    .maker-card { padding: 60px 45px; }
+    .headline { font-size: 2.4rem; }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Things Place - Coming Soon!</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Quicksand:wght@500;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+</head>
+<body>
+
+    <div class="bg-deco deco-1"></div>
+    <div class="bg-deco deco-2"></div>
+
+    <main class="maker-card">
+        
+        <header class="logo-header">
+            <h1 class="brand-logo">My Things Place</h1>
+        </header>
+
+        <section class="welcome-content">
+            <h2 class="headline">A new shop for handmade cool.</h2>
+            <p class="subtext">
+                We are busy in the studio creating unique jewelry, clay crafts, <strong>fun hair accessories</strong>, and our very own newspaper zine. 
+            </p>
+        </section>
+
+        <section class="signup-box-container">
+            <div class="signup-box">
+                <h3>Be the first to see our things!</h3>
+                <p>Join the list for our grand opening.</p>
+                
+                <form action="PASTE_YOUR_FORMSPREE_URL_HERE" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email address..." required>
+                    <button type="submit">Notify Me! ✨</button>
+                </form>
+                <p class="tiny-text">No spam, just sparkles.</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="categories">
+                <span class="cat-orange">🎨 Art & Zines</span> <span class="divider">•</span>
+                <span class="cat-gold">📿 Jewelry & Hair Accessories</span> <span class="divider">•</span>
+                <span class="cat-silver">🏺 Clay & Sculpture</span>
+            </div>
+            <p class="copyright">© 2025 My Things Place. Handmade by [Daughter's Name] & Friends.</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
