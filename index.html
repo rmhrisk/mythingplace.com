@@ -36,10 +36,22 @@
                 <h3>Be the first to see our things!</h3>
                 <p class="signup-invite">Join the list for our grand opening.</p>
                 
-                <form action="PASTE_YOUR_FORMSPREE_URL_HERE" method="POST">
-                    <input type="email" name="email" placeholder="Enter your email address..." required>
-                    <button type="submit">Notify Me! ✨</button>
+                <form
+                  action="https://formspree.io/f/xvgeyykq"
+                  method="POST"
+                >
+                  <input type="email" name="email" placeholder="Enter your email address..." required>
+                
+                  <!-- Optional extras (recommended) -->
+                  <input type="hidden" name="_subject" value="My Things Place – New signup ✨">
+                  <input type="hidden" name="_captcha" value="false">
+                
+                  <!-- Honeypot spam trap -->
+                  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                
+                  <button type="submit">Notify Me! ✨</button>
                 </form>
+                
                 <p class="tiny-text">No spam, just sparkles.</p>
             </div>
         </section>
