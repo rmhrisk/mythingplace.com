@@ -1,71 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Thing Place - Coming Soon!</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Quicksand:wght@500;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Thing Place</title>
 
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Quicksand:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
 </head>
+
 <body>
+  <div class="bg-deco deco-1"></div>
+  <div class="bg-deco deco-2"></div>
 
-    <div class="bg-deco deco-1"></div>
-    <div class="bg-deco deco-2"></div>
+  <main class="maker-card">
 
-    <main class="maker-card">
-        
-        <header class="logo-header">
-            <h1 class="brand-logo">My Thing Place</h1>
-        </header>
+    <header class="logo-header">
+      <h1 class="brand-logo">My Thing Place</h1>
+    </header>
 
-        <section class="welcome-content">
-            <h2 class="headline">A new shop for handmade cool.</h2>
-            <p class="subtext">
-                We are busy in the studio creating unique jewelry, clay crafts, customized pencils, and our very own stories. 
-            </p>
-        </section>
+    <section class="welcome-content">
+      <h2 class="headline">A new shop for handmade cool.</h2>
+      <p class="subtext">
+        We are busy in the studio creating unique jewelry, clay crafts, customized pencils, and our very own stories.
+      </p>
+    </section>
 
-        <section class="signup-box-container">
-            <div class="signup-box">
-                <h3>Be the first to see our things!</h3>
-                <p class="signup-invite">Join the list for our grand opening.</p>
-                
-                <form
-                  action="https://formspree.io/f/xvgeyykq"
-                  method="POST"
-                >
-                  <input type="email" name="email" placeholder="Enter your email address..." required>
-                
-                  <!-- Optional extras (recommended) -->
-                  <input type="hidden" name="_subject" value="My Things Place – New signup ✨">
-                  <input type="hidden" name="_captcha" value="false">
-                
-                  <!-- Honeypot spam trap -->
-                  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-                
-                  <button type="submit">Notify Me! ✨</button>
-                </form>
-                
-                <p class="tiny-text">No spam, just sparkles.</p>
-            </div>
-        </section>
+    <!-- HERO IMAGE -->
+    <section class="hero-section" aria-label="Featured handmade item">
+      <div class="hero-row">
+        <div class="hero-image" id="hero-image" role="img" aria-label="Handmade by us, one piece at a time. Each item is made with care, creativity, and a lot of fun.">
+          Photo coming soon
+        </div>
+      </div>
+    </section>
 
-        <footer>
-            <div class="categories">
-                <span class="cat-orange">🎨 Art & Stories</span> <span class="divider">•</span>
-                <span class="cat-gold">📿 Jewelry & Wearables</span> <span class="divider">•</span>
-                <span class="cat-silver">🏺 Clay & Sculpture</span>
-            </div>
-            <p class="copyright">© 2025 My Thing Place. Handmade by Nicole & Friends.</p>
-        </footer>
+    <!-- SHOP (JSON-driven) -->
+    <section class="shop-section">
+      <h3 class="shop-title">Things</h3>
+      <p class="shop-subtext">Tap an item to see details and buy.</p>
+      <p class="shop-subtext" style="font-size:0.9rem; opacity:0.7;">Secure checkout powered by Stripe.</p>
 
-    </main>
+      <div id="product-grid" class="product-grid" aria-label="Product list">
+        <p class="tiny-text">Loading items…</p>
+      </div>
+    </section>
 
+    <footer>
+      <div class="categories" aria-label="Filter categories">
+        <button class="category-toggle cat-orange" type="button" data-category="Art &amp; Stories" aria-pressed="true">🎨 Art &amp; Stories</button>
+        <span class="divider">•</span>
+        <button class="category-toggle cat-gold" type="button" data-category="Jewelry &amp; Wearables" aria-pressed="true">📿 Jewelry &amp; Wearables</button>
+        <span class="divider">•</span>
+        <button class="category-toggle cat-silver" type="button" data-category="Clay &amp; Sculpture" aria-pressed="true">🏺 Clay &amp; Sculpture</button>
+      </div>
+      <div class="counts" id="counts" aria-live="polite"></div>
+
+      <section class="signup-box-container footer-signup">
+        <div class="signup-box">
+          <h3>Be the first to see our things!</h3>
+          <p class="signup-invite">Join the list for our grand opening.</p>
+
+          <form action="https://formspree.io/f/xvgeyykq" method="POST">
+            <input type="email" name="email" placeholder="Enter your email address..." required>
+
+            <input type="hidden" name="_subject" value="My Thing Place – New signup ✨">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+            <button type="submit">Notify Me! ✨</button>
+          </form>
+
+          <p class="tiny-text">No spam, just sparkles.</p>
+        </div>
+      </section>
+
+      <p class="copyright">© 2025 My Thing Place. Handmade by Nicole &amp; Friends.</p>
+    </footer>
+
+  </main>
+
+  <script src="js/shop.js"></script>
 </body>
 </html>

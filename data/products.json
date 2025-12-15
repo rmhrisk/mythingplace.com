@@ -1,0 +1,116 @@
+{
+  "currencySymbol": "$",
+  "heroImage": "images/hero.jpg",
+  "items": [
+    {
+      "id": "dragon-keychain",
+      "name": "3D Printed Dragon Keychain",
+      "price": 12,
+      "description": "Cute little dragon. Pick your favorite color.",
+      "image": "images/products/dragon-keychain.jpg",
+      "paymentLink": "https://buy.stripe.com/YOUR_LINK_HERE",
+      "tag": "3D Print",
+      "category": "Art & Stories",
+      "soldOut": false
+    },
+    {
+      "id": "sparkle-earrings",
+      "name": "Sparkle Star Earrings",
+      "price": 18,
+      "description": "Handmade earrings with glitter stars.",
+      "image": "images/products/sparkle-earrings.jpg",
+      "paymentLink": "https://buy.stripe.com/YOUR_LINK_HERE",
+      "tag": "Handmade",
+      "category": "Jewelry & Wearables",
+      "soldOut": false
+    },
+    {
+      "id": "name-pencil",
+      "name": "Custom Name Pencil",
+      "price": 6,
+      "description": "We write your name on a pencil in fun colors.",
+      "image": "images/products/name-pencil.jpg",
+      "paymentLink": "https://buy.stripe.com/YOUR_LINK_HERE",
+      "tag": "Custom",
+      "category": "Art & Stories",
+      "soldOut": true
+    },
+    {
+      "id": "clay-charm",
+      "name": "Tiny Clay Charm",
+      "price": 7,
+      "description": "A tiny charm for backpacks, zippers, and keychains.",
+      "image": "images/products/clay-charm.jpg",
+      "paymentLink": "https://buy.stripe.com/YOUR_LINK_HERE",
+      "tag": "Clay",
+      "category": "Clay & Sculpture",
+      "soldOut": false
+    },
+    {
+      "id": "bracelet",
+      "name": "Blue Braided Bracelet",
+      "price": 10,
+      "description": "A handmade bracelet in soft blue and white.",
+      "image": "images/products/bracelet.jpg",
+      "paymentLink": "https://buy.stripe.com/YOUR_LINK_HERE",
+      "tag": "Handmade",
+      "category": "Jewelry & Wearables",
+      "soldOut": false
+    },
+    {
+      "id": "mini-story",
+      "name": "Mini Story Zine",
+      "price": 5,
+      "description": "A tiny folded story book made by us.",
+      "image": "images/products/mini-story.jpg",
+      "paymentLink": "https://buy.stripe.com/YOUR_LINK_HERE",
+      "tag": "Stories",
+      "category": "Art & Stories",
+      "soldOut": false
+    },
+    {
+      "id": "painted-rock",
+      "name": "Painted Kindness Rock",
+      "price": 4,
+      "description": "A little painted rock to leave for someone to find.",
+      "image": "images/products/painted-rock.jpg",
+      "paymentLink": "https://buy.stripe.com/YOUR_LINK_HERE",
+      "tag": "Art",
+      "category": "Art & Stories",
+      "soldOut": false
+    },
+    {
+      "id": "3d-fidget",
+      "name": "3D Printed Fidget",
+      "price": 9,
+      "description": "Clicky, twisty, and fun to play with.",
+      "image": "images/products/3d-fidget.jpg",
+      "paymentLink": "https://buy.stripe.com/YOUR_LINK_HERE",
+      "tag": "3D Print",
+      "category": "Art & Stories",
+      "soldOut": false
+    },
+    {
+      "id": "earring-hearts",
+      "name": "Heart Dangle Earrings",
+      "price": 16,
+      "description": "Handmade hearts that swing and sparkle.",
+      "image": "images/products/earring-hearts.jpg",
+      "paymentLink": "https://buy.stripe.com/YOUR_LINK_HERE",
+      "tag": "Handmade",
+      "category": "Jewelry & Wearables",
+      "soldOut": false
+    },
+    {
+      "id": "clay-pin",
+      "name": "Clay Pin (Choose a Shape)",
+      "price": 11,
+      "description": "A cute pin for jackets and backpacks.",
+      "image": "images/products/clay-pin.jpg",
+      "paymentLink": "https://buy.stripe.com/YOUR_LINK_HERE",
+      "tag": "Clay",
+      "category": "Clay & Sculpture",
+      "soldOut": false
+    }
+  ]
+}
